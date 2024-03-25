@@ -6,7 +6,6 @@ import {
 import { nanoid } from 'nanoid/non-secure';
 import { cloudflare } from '.';
 import { generateEmbedding } from '../openai';
-import * as ndjson from 'ndjson';
 
 export async function getIndexes() {
 	return await cloudflare.vectorize.indexes.list(CLOUDFLARE_ACCOUNT_ID);
