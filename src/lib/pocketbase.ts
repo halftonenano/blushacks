@@ -27,5 +27,4 @@ pb.authStore.onChange((auth) => {
 export function signOut() {
 	pb.authStore.clear();
 	eraseCookie('pb_auth');
-	goto('/signin');
 }
